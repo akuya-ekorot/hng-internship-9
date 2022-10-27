@@ -13,20 +13,34 @@ const Home = () => (
             <div className="avatar-share-button"></div>
           </div>
           <div className="link-section">
-            {Array(6).fill(0).map((link, index) => {
-              return (<div key={index}>
-                <div></div>
-              </div>);
-            })}
+            {Array(6)
+              .fill(0)
+              .map((link, index) => {
+                return (
+                  <div key={index}>
+                    <div></div>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </main>
-      <div className="social-section">
-        <div className="container">
+      <div className="social-section flex flex-col items-center py-[24px]">
+        <div className="container px-[32px]">
           <div className="content">
-            <nav className="social-icons">
-              <img />
-              <img />
+            <nav className="social-icons flex gap-[24px] justify-center">
+              <Image
+                src="/slack.svg"
+                height={`24`}
+                width={`24`}
+                alt="slack icon"
+              />
+              <Image
+                src="/github.svg"
+                height={`24`}
+                width={`24`}
+                alt="github icon"
+              />
             </nav>
           </div>
         </div>
