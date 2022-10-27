@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-type links = {
+type link = {
   name: string;
   link?: string;
 };
 
-const pageLinks: links[] = [
+const pageLinks: link[] = [
   { name: "Twitter Link" },
   { name: "Zuri Team", link: "https://training.zuri.team/" },
   { name: "Zuri Books", link: "http://books.zuri.team" },
@@ -29,15 +29,17 @@ const Home = () => (
             </div>
             <div className="avatar-share-button"></div>
           </div>
-          <div className="link-section">
-            {pageLinks
-              .map((link, index) => {
-                return (
-                  <div key={index}>
-                    <div>{link.name}</div>
+          <div className="link-section flex flex-col gap-[24px]">
+            {pageLinks.map((link, index) => {
+              return (
+                <a className="" href={link?.link} key={index}>
+                  <div className="flex flex-col items-center py-[24px] bg-[#EAECF0] rounded-lg">
+                    <p>{link?.name}</p>
                   </div>
-                );
-              })}
+                  <img />
+                </a>
+              );
+            })}
           </div>
         </div>
       </main>
