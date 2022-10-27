@@ -21,13 +21,24 @@ const Home = () => (
   <div className="flex flex-col">
     <section className="flex flex-col grow px-[112px] py-[64px]">
       <main className="py-[32px]">
-        <div className="content">
-          <div className="profile-section">
-            <img />
+        <div className="content flex flex-col gap-[56px]">
+          <div className="profile-section flex flex-col items-center gap-[24px] relative">
+            <Image
+              src="/avatar-default.svg"
+              height={`88`}
+              width={`88`}
+              alt="Profile Photo"
+            />
             <div className="twitter">
-              <p className="annette-black"></p>
+              <p className="annette-black">Annette Black</p>
             </div>
-            <div className="avatar-share-button"></div>
+            <Image
+              src={`/share-default.svg`}
+              height={`40`}
+              width={`40`}
+              className="avatar-share-button absolute -top-[20px] right-[208px]"
+              alt={""}
+            />
           </div>
           <div className="link-section flex flex-col gap-[24px]">
             {pageLinks.map((link, index) => {
