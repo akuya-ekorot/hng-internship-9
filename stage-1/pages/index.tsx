@@ -21,7 +21,16 @@ const Home = () => (
           </div>
         </div>
       </main>
-      <div></div>
+      <div className="social-section">
+        <div className="container">
+          <div className="content">
+            <nav className="social-icons">
+              <img />
+              <img />
+            </nav>
+          </div>
+        </div>
+      </div>
     </section>
     <footer className="px-[48px] py-[80px]">
       <div className="px-[32px]">
