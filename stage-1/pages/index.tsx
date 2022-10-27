@@ -1,5 +1,22 @@
 import Image from "next/image";
 
+type links = {
+  name: string;
+  link?: string;
+};
+
+const pageLinks: links[] = [
+  { name: "Twitter Link" },
+  { name: "Zuri Team", link: "https://training.zuri.team/" },
+  { name: "Zuri Books", link: "http://books.zuri.team" },
+  {
+    name: "Python Books",
+    link: "https://books.zuri.team/python-for-beginners?ref_id=akuya-ekorot",
+  },
+  { name: "Background Check for Coders", link: "https://background.zuri.team" },
+  { name: "Design Books", link: "https://books.zuri.team/design-rules" },
+];
+
 const Home = () => (
   <div className="flex flex-col">
     <section className="flex flex-col grow px-[112px] py-[64px]">
@@ -13,12 +30,11 @@ const Home = () => (
             <div className="avatar-share-button"></div>
           </div>
           <div className="link-section">
-            {Array(6)
-              .fill(0)
+            {pageLinks
               .map((link, index) => {
                 return (
                   <div key={index}>
-                    <div></div>
+                    <div>{link.name}</div>
                   </div>
                 );
               })}
