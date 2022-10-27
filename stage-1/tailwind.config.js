@@ -14,6 +14,12 @@ module.exports = {
         "text-lg": ["18px", "28px"],
         "text-md": ["16px", "24px"],
       },
+      colors: {
+        gray: {
+          500: '#667085',
+          900: '#101828',
+        }
+      }
     },
   },
   plugins: [],

@@ -44,7 +44,7 @@ const Home = () => (
                 alt="Profile Photo"
               />
               <div className="twitter">
-                <p className="annette-black font-inter font-bold text-text-xl">
+                <p className="annette-black font-inter font-bold text-text-xl text-gray-900">
                   Annette Black
                 </p>
               </div>
@@ -63,7 +63,7 @@ const Home = () => (
               {pageLinks.map((link, index) => {
                 return (
                   <a className="" href={link?.link} key={index}>
-                    <div className="flex flex-col items-center py-[24px] bg-[#EAECF0] rounded-lg text-text-lg font-medium">
+                    <div className="flex flex-col items-center py-[24px] bg-[#EAECF0] rounded-lg text-text-lg font-medium text-gray-900">
                       <p>{link?.name}</p>
                     </div>
                     <img />
@@ -103,7 +103,7 @@ const Home = () => (
               height={`32`}
               alt={`Zuri Internship Logo`}
             />
-            <p className="grow flex items-center justify-center font-inter text-text-md">
+            <p className="grow flex items-center justify-center font-inter text-text-md text-gray-500">
               HNG Internship 9 Frontend Task
             </p>
             <Image
