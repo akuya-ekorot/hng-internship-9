@@ -29,9 +29,8 @@ const Home = () => (
         <main className="py-[32px]">
           <div className="content flex flex-col gap-[56px]">
             <ProfileSection
-              name={myData.name}
               twitter={myData.twitter}
-              github={myData.github}
+              slack={myData.slack}
               photo={myData.photo}
             />
             <LinkSection />

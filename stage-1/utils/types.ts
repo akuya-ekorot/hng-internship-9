@@ -1,4 +1,5 @@
 export type pageLink = {
+  id: string;
   name: string;
   link?: string;
 };
@@ -9,8 +10,7 @@ export type Social = {
 };
 
 export type personalData = {
-  name: string;
   twitter: string;
-  github: string;
+  slack: string;
   photo: string;
 }
