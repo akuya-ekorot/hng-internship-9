@@ -6,6 +6,9 @@ import LinkSection from "../components/LinkSection";
 import SocialSection from "../components/SocialSection";
 import Footer from "../components/Footer";
 
+/**Data */
+import myData from "../utils/myData";
+
 const Home = () => (
   <>
     <Head>
@@ -25,7 +28,12 @@ const Home = () => (
       <section className="flex flex-col grow px-[112px] py-[64px]">
         <main className="py-[32px]">
           <div className="content flex flex-col gap-[56px]">
-            <ProfileSection />
+            <ProfileSection
+              name={myData.name}
+              twitter={myData.twitter}
+              github={myData.github}
+              photo={myData.photo}
+            />
             <LinkSection />
           </div>
         </main>
