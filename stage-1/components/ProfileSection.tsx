@@ -3,10 +3,11 @@ import { personalData } from "../utils/types";
 
 const ProfileSection = ({ twitter, slack, photo }: personalData) => (
   <div className="profile-section flex flex-col items-center gap-[24px] relative">
-    <div
-      className="w-[88px] h-[88px] rounded-full bg-profile hover:bg-profile-hover bg-contain hover:bg-camera hover:bg-no-repeat hover:bg-bottom"
+    <a
+      className="w-[88px] h-[88px] rounded-full bg-profile hover:bg-profile-hover bg-contain hover:bg-camera hover:bg-no-repeat hover:bg-bottom focus:outline-none focus:ring-[5.5px] focus:ring-[#EBE9FE]"
       id="profile__img"
-    ></div>
+      href="#"
+    ></a>
     <div>
       <p
         className="font-inter font-bold text-text-xl text-gray-900"
