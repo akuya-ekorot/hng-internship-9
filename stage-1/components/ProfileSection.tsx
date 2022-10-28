@@ -4,10 +4,18 @@ import { personalData } from "../utils/types";
 const ProfileSection = ({ twitter, slack, photo }: personalData) => (
   <div className="profile-section flex flex-col items-center gap-[24px] relative">
     <a
-      className="w-[88px] h-[88px] rounded-full bg-profile hover:bg-profile-hover bg-contain hover:bg-camera hover:bg-no-repeat hover:bg-bottom focus:outline-none focus:ring-[5.5px] focus:ring-[#EBE9FE]"
+      className="group flex flex-col items-center justify-end w-[88px] h-[88px] pb-[11px] rounded-full bg-profile hover:bg-profile-hover bg-contain hover:bg-camera hover:bg-no-repeat hover:bg-bottom focus:outline-none focus:ring-[5.5px] focus:ring-[#EBE9FE]"
       id="profile__img"
       href="#"
-    ></a>
+    >
+      <Image
+        src={`/camera.svg`}
+        height={`24`}
+        width={`24`}
+        alt="camera icon. change profile picture"
+        className="group-hover:visible invisible"
+      />
+    </a>
     <div>
       <p
         className="font-inter font-bold text-text-xl text-gray-900"
