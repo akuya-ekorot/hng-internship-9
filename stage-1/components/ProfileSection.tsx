@@ -1,16 +1,24 @@
 import Image from "next/image";
 import { personalData } from "../utils/types";
 
-const ProfileSection = ({ twitter, slack, photo}: personalData) => (
+const ProfileSection = ({ twitter, slack, photo }: personalData) => (
   <div className="profile-section flex flex-col items-center gap-[24px] relative">
-    <Image src={photo} height={`88`} width={`88`} alt="Profile Photo" className="rounded-full" id="profile__img" />
+    <div
+      className="w-[88px] h-[88px] bg-profile rounded-full bg-contain"
+      id="profile__img"
+    ></div>
     <div>
-      <p className="font-inter font-bold text-text-xl text-gray-900" id="twitter">
+      <p
+        className="font-inter font-bold text-text-xl text-gray-900"
+        id="twitter"
+      >
         {twitter}
       </p>
     </div>
     <div className="hidden">
-      <p className="annette-black" id="slack">{slack}</p>
+      <p className="annette-black" id="slack">
+        {slack}
+      </p>
     </div>
     <Image
       src={`/share-default.svg`}

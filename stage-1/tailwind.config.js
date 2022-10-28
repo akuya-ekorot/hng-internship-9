@@ -25,6 +25,9 @@ module.exports = {
           900: "#101828",
         },
       },
+      backgroundImage: {
+        profile: "url('/profile-photo.jpg')",
+      },
     },
   },
   plugins: [],
