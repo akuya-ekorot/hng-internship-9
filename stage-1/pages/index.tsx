@@ -1,9 +1,10 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
-import SocialSection from "../components/SocialSection";
 
+/**Components */
 import ProfileSection from "../components/ProfileSection";
 import LinkSection from "../components/LinkSection";
+import SocialSection from "../components/SocialSection";
+import Footer from "../components/Footer";
 
 const Home = () => (
   <>
