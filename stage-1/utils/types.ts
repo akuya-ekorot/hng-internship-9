@@ -7,6 +7,7 @@ export type pageLink = {
 export type Social = {
   src: string;
   alt: string;
+  link: string;
 };
 
 export type personalData = {
