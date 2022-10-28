@@ -3,7 +3,7 @@ import { personalData } from "../utils/types";
 
 const ProfileSection = ({ twitter, github, photo, name }: personalData) => (
   <div className="profile-section flex flex-col items-center gap-[24px] relative">
-    <Image src={photo} height={`88`} width={`88`} alt="Profile Photo" />
+    <Image src={photo} height={`88`} width={`88`} alt="Profile Photo" className="rounded-full" />
     <div className="twitter">
       <p className="font-inter font-bold text-text-xl text-gray-900">
         {twitter}
