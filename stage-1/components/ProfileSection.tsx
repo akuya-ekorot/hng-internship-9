@@ -4,7 +4,7 @@ import { personalData } from "../utils/types";
 const ProfileSection = ({ twitter, slack, photo }: personalData) => (
   <div className="profile-section flex flex-col items-center gap-[24px] relative">
     <div
-      className="w-[88px] h-[88px] bg-profile rounded-full bg-contain"
+      className="w-[88px] h-[88px] rounded-full bg-profile hover:bg-profile-hover bg-contain hover:bg-camera hover:bg-no-repeat hover:bg-bottom"
       id="profile__img"
     ></div>
     <div>

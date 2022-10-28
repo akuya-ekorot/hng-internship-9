@@ -27,7 +27,12 @@ module.exports = {
       },
       backgroundImage: {
         profile: "url('/profile-photo.jpg')",
+        "profile-hover":
+          "url('/camera.svg'), linear-gradient(0deg, rgba(52, 64, 84, 0.75), rgba(52, 64, 84, 0.75)), url('/profile-photo.jpg')",
       },
+      backgroundSize: {
+        "camera": "24px, contain, contain"
+      }
     },
   },
   plugins: [],
