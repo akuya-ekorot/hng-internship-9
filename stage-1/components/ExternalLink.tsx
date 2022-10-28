@@ -2,12 +2,13 @@ import { pageLink } from "../utils/types";
 
 const ExternalLink = ({ name, link, id }: pageLink) => (
   <a
-    className="focus:outline-none focus:border focus:border-gray-400 rounded-lg text-text-lg font-medium overflow-hidden"
+    className="bg-gray-200 hover:bg-gray-300 focus:outline-none focus:border focus:border-gray-400 disabled:bg-gray-25 disabled:border-gray-100 disbled:drop-shadow-[0, 1px, 2px, rgba(16, 2, 40, 0.05)] rounded-lg text-text-lg font-medium overflow-hidden"
     href={link}
     id={id}
     target="_blank"
+    role="link"
   >
-    <div className="flex flex-col items-center py-[24px] bg-gray-200 hover:bg-gray-300 ">
+    <div className="flex flex-col items-center py-[24px] ">
       <p className="text-gray-900">{name}</p>
     </div>
     <img />
