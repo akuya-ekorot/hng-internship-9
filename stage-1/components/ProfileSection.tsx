@@ -7,7 +7,7 @@ const ProfileSection = ({ twitter, slack, photo }: personalData) => (
     <ProfilePic />
     <div>
       <p
-        className="font-inter font-bold text-text-xl text-gray-900"
+        className="font-inter font-bold md:text-text-xl text-text-lg text-gray-900"
         id="twitter"
       >
         {twitter}

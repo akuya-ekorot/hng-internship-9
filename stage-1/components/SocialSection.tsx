@@ -2,8 +2,8 @@ import Social from "./Social";
 import social from "../utils/social";
 
 const SocialSection = () => (
-  <div className="social-section flex flex-col items-center py-[24px]">
-    <div className="container px-[32px]">
+  <div className="social-section w-full flex justify-stretch py-[24px] max-w-[1216px] m-auto">
+    <div className="container px-[32px] grow">
       <div className="content">
         <nav className="social-icons flex gap-[24px] justify-center">
           {social.map((profile, index) => (

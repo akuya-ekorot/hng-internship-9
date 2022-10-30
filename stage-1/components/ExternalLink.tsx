@@ -9,7 +9,7 @@ const ExternalLink = ({ name, link, id }: pageLink) => (
     role="link"
   >
     <div className="flex flex-col items-center py-[24px] ">
-      <p className="text-gray-900">{name}</p>
+      <p className="text-gray-900 md:text-text-lg text-sm font-medium">{name}</p>
     </div>
     <img />
   </a>
