@@ -14,4 +14,4 @@ export type personalData = {
   twitter: string;
   slack: string;
   photo: string;
-}
+};
