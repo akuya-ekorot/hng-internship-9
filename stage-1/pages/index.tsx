@@ -24,10 +24,10 @@ const Home = () => (
       />
     </Head>
 
-    <div className="flex flex-col">
-      <section className="flex flex-col grow px-[112px] py-[64px]">
-        <main className="py-[32px]">
-          <div className="content flex flex-col gap-[56px]">
+    <div className="w-full flex flex-col items-stretch pt-[64px] pb-[32px] md:pb-[64px] gap-[24px] md:px-[112px] px-[16px]">
+      <section className="w-full flex items-stretch max-w-[1216px] m-auto">
+        <main className="md:px-[32px] grow">
+          <div className="content flex flex-col md:gap-[56px] gap-[32px]">
             <ProfileSection
               twitter={myData.twitter}
               slack={myData.slack}
@@ -36,10 +36,10 @@ const Home = () => (
             <LinkSection />
           </div>
         </main>
-        <SocialSection />
       </section>
-      <Footer />
+      <SocialSection />
     </div>
+    <Footer />
   </>
 );
 

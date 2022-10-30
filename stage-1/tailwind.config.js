@@ -13,6 +13,7 @@ module.exports = {
         "text-xl": ["20px", "30px"],
         "text-lg": ["18px", "28px"],
         "text-md": ["16px", "24px"],
+        "text-sm": ["14px", "20px"],
         "text-xs-semibold" : ["12px", "18px"]
       },
       colors: {
