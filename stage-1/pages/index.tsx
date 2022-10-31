@@ -44,9 +44,3 @@ const Home = () => (
 );
 
 export default Home;
-
-
-const getWidnowSize = () => {
-  const {innerWidth, innerHeight} = window;
-  return {innerWidth, innerHeight};
-}
