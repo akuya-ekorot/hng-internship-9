@@ -2,6 +2,7 @@ export type pageLink = {
   id: string;
   name: string;
   link?: string;
+  subtext?: string;
 };
 
 export type Social = {

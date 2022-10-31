@@ -8,6 +8,7 @@ const LinkSection = () => (
         id={pageLink.id}
         name={pageLink.name}
         link={pageLink?.link}
+        subtext={pageLink?.subtext}
         key={pageLink.id}
       />
     ))}
