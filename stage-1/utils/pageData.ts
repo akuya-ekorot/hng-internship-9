@@ -1,7 +1,8 @@
 import { pageLink } from "./types";
 
 const pageLinks: pageLink[] = [
-  { name: "Zuri Team", link: "", id: "btn__zuri" },
+  { name: "Twitter Link", link: "https://twitter.com/akuya_ekorot", id: "" },
+  { name: "Zuri Team", link: "https://training.zuri.team", id: "btn__zuri" },
   { name: "Zuri Books", link: "https://books.zuri.team", id: "books" },
   {
     name: "Python Books",

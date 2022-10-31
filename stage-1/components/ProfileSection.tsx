@@ -21,7 +21,7 @@ const ProfileSection = ({ twitter, slack, photo }: personalData) => {
 
   return (
     <div className="profile-section flex flex-col items-center gap-[24px] relative">
-      <ProfilePic />
+      <ProfilePic url={`${photo}`} />
       <div>
         <p
           className="font-inter font-bold md:text-text-xl text-text-lg text-gray-900"
