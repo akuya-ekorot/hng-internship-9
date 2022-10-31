@@ -4,7 +4,7 @@ import MoreIcon from "./MoreIcon";
 import ProfilePic from "./ProfilePic";
 import ShareIcon from "./ShareIcon";
 
-const getBreakPoint = (width: number): boolean => {
+const useMediaQuery = (width: number): boolean => {
   const [targetReached, setTargetReached] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const getBreakPoint = (width: number): boolean => {
 };
 
 const ProfileSection = ({ twitter, slack, photo }: personalData) => {
-  const isBreakPoint = getBreakPoint(768);
+  const isBreakPoint = useMediaQuery(768);
 
   return (
     <div className="profile-section flex flex-col items-center gap-[24px] relative">

@@ -6,6 +6,7 @@ const ExternalLink = ({ name, link, id }: pageLink) => (
     href={link}
     id={id}
     target="_blank"
+    rel="noreferrer"
     role="link"
   >
     <div className="flex flex-col items-center py-[24px] ">
