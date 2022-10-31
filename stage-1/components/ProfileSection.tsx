@@ -20,11 +20,11 @@ const ProfileSection = ({ twitter, slack, photo }: personalData) => (
     </div>
     <a
       href="#"
-      className="peer stroke-gray-400 hover:stroke-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-[4px] focus:ring-gray-100 absolute -top-[20px] right-[208px] h-[40px] w-[40px] rounded-full border flex items-center justify-center border-dashed border-gray-300 text-gray-400"
+      className="peer stroke-gray-400 hover:stroke-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-[4px] focus:ring-gray-100 absolute -top-[20px] right-[0px] lg:right-[208px] h-[40px] w-[40px] rounded-full border flex items-center justify-center border-dashed border-gray-300 text-gray-400"
     >
       <ShareIcon />
     </a>
-    <div className="invisible peer-hover:visible flex items-center absolute -top-[18px] right-[250px]">
+    <div className="invisible peer-hover:visible flex items-center absolute -top-[18px] right-[38px] lg:right-[246px]">
       <div className="h-[34px] w-[85px] bg-gray-900 text-white rounded-[8px] flex items-center justify-center py-[8px] px-[12px]">
         <p className="text-text-xs-semibold font-semibold">Share Link</p>
       </div>
