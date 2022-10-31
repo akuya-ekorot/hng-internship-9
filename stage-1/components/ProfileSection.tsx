@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { personalData } from "../utils/types";
 import MoreIcon from "./MoreIcon";
 import ProfilePic from "./ProfilePic";
@@ -16,22 +16,22 @@ const useMediaQuery = (width: number): boolean => {
   return targetReached;
 };
 
-const ProfileSection = ({ twitter, slack, photo }: personalData) => {
+const ProfileSection = ({ ...myData }: personalData) => {
   const isBreakPoint = useMediaQuery(768);
 
   return (
     <div className="profile-section flex flex-col items-center gap-[24px] relative">
-      <ProfilePic url={`${photo}`} />
+      <ProfilePic />
       <div>
         <p
           className="font-inter font-bold md:text-text-xl text-text-lg text-gray-900"
           id="twitter"
         >
-          {twitter}
+          {myData.twitter}
         </p>
       </div>
       <div className="hidden">
-        <p id="slack">{slack}</p>
+        <p id="slack">{myData.slack}</p>
       </div>
       <a
         href="#"
