@@ -36,7 +36,7 @@ const pageLinks: pageLink[] = [
       "Don't know what to look for in a great coder? Let us run a background check for you ... or let them run away with weeks worth of work not delivered.",
   },
   {
-    name: "Design Books",
+    name: "Get Our Design Book",
     link: "https://books.zuri.team/design-rules",
     id: "book__design",
     subtext:
