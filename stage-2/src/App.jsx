@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import LinkSection from "./components/LinkSection";
 import ProfileSection from "./components/ProfileSection";
 import SocialSection from "./components/SocialSection";
 
@@ -9,6 +10,7 @@ function App() {
         <main className="md:px-[32px] grow">
           <div className="content flex flex-col md:gap-[56px] gap-[32px]">
             <ProfileSection />
+            <LinkSection />
             <SocialSection />
           </div>
         </main>

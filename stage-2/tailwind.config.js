@@ -71,7 +71,7 @@ module.exports = {
       },
       backgroundImage: {
         profile: "url('/src/profile-photo.jpg')",
-        "focus-ring":
+        "profile-hover":
           "linear-gradient(0deg, rgba(52, 64, 84, 0.75), rgba(52, 64, 84, 0.75)), url('/src/profile-photo.jpg')",
       },
       backgroundSize: {
