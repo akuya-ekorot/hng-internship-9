@@ -2,7 +2,6 @@ import Social from "./Social";
 import social from "../utils/social";
 
 const SocialSection = () => {
-  console.log(social);
   return (
     <div className="social-section w-full flex justify-stretch py-[24px] max-w-[1216px] m-auto">
       <div className="container px-[32px] grow">

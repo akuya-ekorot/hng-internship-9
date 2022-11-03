@@ -1,9 +1,9 @@
-const Link = ({ name, link, id, subtext }) => (
+const Link = ({ name, link, id, subtext, target }) => (
   <a
     className=" group bg-gray-200 hover:bg-gray-300 focus:outline-none focus:border focus:border-gray-400 disabled:bg-gray-25 disabled:border-gray-100 disbled:drop-shadow-[0, 1px, 2px, rgba(16, 2, 40, 0.05)] rounded-lg text-text-lg font-medium overflow-hidden"
     href={link}
     id={id}
-    target="_blank"
+    target={target ? "_blank" : ""}
     rel="noreferrer"
     role="link"
   >
