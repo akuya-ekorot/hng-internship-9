@@ -55,7 +55,7 @@ module.exports = {
           900: "#101828",
         },
         primary: {
-          25: "F5FAFF",
+          25: "#F5FAFF",
           50: "#EFF8FF",
           100: "#D1E9FF",
           200: "#B2DDFF",
@@ -67,6 +67,15 @@ module.exports = {
           800: "#1849A9",
           900: "#194185",
         },
+        "hover-blue": "#ebe9fe",
+      },
+      backgroundImage: {
+        profile: "url('/src/profile-photo.jpg')",
+        "focus-ring":
+          "linear-gradient(0deg, rgba(52, 64, 84, 0.75), rgba(52, 64, 84, 0.75)), url('/src/profile-photo.jpg')",
+      },
+      backgroundSize: {
+        camera: "contain, contain",
       },
     },
   },
