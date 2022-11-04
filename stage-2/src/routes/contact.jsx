@@ -8,17 +8,17 @@ import FormButton from "../components/FormButton";
 const Contact = () => {
   return (
     <div className="">
-      <section className="flex items-center justify-center h-[800px]">
-        <main className="flex flex-col items-center justify-center">
+      <section className="flex items-center justify-center">
+        <main className="flex flex-col items-center justify-center py-[64px]">
           <div className="max-w-[720px] flex flex-col gap-[48px]">
-            <header className="flex flex-col gap-[20px]">
+            <header className="flex flex-col gap-[20px] md:p-0 px-[16px]">
               <h1 className="text-display-md font-semibold">Contact Me</h1>
-              <p className="text-xl font-normal">
+              <p className="md:text-xl text-lg font-normal">
                 Hi there, contact me to ask me about anything you have in mind.
               </p>
             </header>
-            <Form className="flex flex-col gap-[32px]">
-              <div className="flex gap-[24px]">
+            <Form className="flex flex-col gap-[32px] md:p-0 px-[16px]">
+              <div className="flex md:flex-row flex-col gap-[24px]">
                 <FormInput
                   label={`First Name`}
                   placeholder={`Enter your first name`}
