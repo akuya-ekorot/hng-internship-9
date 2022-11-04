@@ -68,6 +68,10 @@ module.exports = {
           900: "#194185",
         },
         "hover-blue": "#ebe9fe",
+        error: {
+          default: "#F89687",
+          focused: "#FFD3CC",
+        },
       },
       backgroundImage: {
         profile: "url('/src/profile-photo.jpg')",

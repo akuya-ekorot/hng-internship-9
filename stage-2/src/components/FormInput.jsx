@@ -6,14 +6,14 @@ const FormInput = ({ label, placeholder, type, tabIndex }) => {
       <label className="text-gray-700 text-sm font-medium">{label}</label>
       {type !== "textarea" ? (
         <input
-          className={tailwindStyles}
+          className={`${tailwindStyles} invalid:border-error-default invalid:focus:ring-error-focused`}
           type={type}
           placeholder={placeholder}
           tabIndex={tabIndex}
         />
       ) : (
         <textarea
-          className={`${tailwindStyles} h-[130px] focus:border-primary-300 focus:ring focus:ring-primary-100 `}
+          className={`${tailwindStyles} h-[130px] focus:border-primary-300 focus:ring focus:ring-primary-100 invalid:border-error-default invalid:focus:ring-error-focused `}
           placeholder={placeholder}
           tabIndex={tabIndex}
         ></textarea>
