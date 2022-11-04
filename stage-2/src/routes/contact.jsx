@@ -7,7 +7,7 @@ import FormButton from "../components/FormButton";
 
 const Contact = () => {
   return (
-    <div className="">
+    <div className="w-full flex flex-col items-stretch pt-[64px] pb-[32px] md:pb-[64px] gap-[24px] md:px-[112px] px-[16px]">
       <section className="flex items-center justify-center">
         <main className="flex flex-col items-center justify-center py-[64px]">
           <div className="max-w-[720px] flex flex-col gap-[48px]">

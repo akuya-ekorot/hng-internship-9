@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { useState } from "react";
 
 const FormInput = ({ label, placeholder, type, tabIndex }) => {
