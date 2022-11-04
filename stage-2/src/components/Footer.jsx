@@ -20,6 +20,7 @@ const Footer = () => {
             width={`132`}
             height={`32`}
             alt={`I4G Logo`}
+            className="object-contain"
           />
         </nav>
       </div>

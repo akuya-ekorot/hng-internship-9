@@ -77,6 +77,9 @@ module.exports = {
       backgroundSize: {
         camera: "contain, contain",
       },
+      content: {
+        link: 'url("/src/check.svg")',
+      },
     },
   },
   plugins: [],
