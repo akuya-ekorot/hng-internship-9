@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-const FormInput = ({ label, placeholder, type, tabIndex }) => {
+const FormInput = ({ label, placeholder, type, tabIndex, id }) => {
   const [initialFocus, setInitialFocus] = useState(false);
 
   const tailwindStyles =
     "border placeholder-shown:border-gray-300 focus:border-primary-300 rounded-lg py-[10px] px-[14px] md:text-md text-sm text-gray-900 placeholder:text-md placeholder:text-gray-500 focus:outline-none";
   return (
     <div className="flex flex-col gap-[6px] grow">
-      <label className="text-gray-700 text-sm font-medium">{label}</label>
+      <label className="text-sm font-medium text-gray-700">{label}</label>
       {type !== "textarea" ? (
         <input
           className={`${tailwindStyles} ${
@@ -19,6 +19,7 @@ const FormInput = ({ label, placeholder, type, tabIndex }) => {
           tabIndex={tabIndex}
           onBlur={() => setInitialFocus(true)}
           required
+          id={id}
         />
       ) : (
         <textarea
@@ -30,6 +31,7 @@ const FormInput = ({ label, placeholder, type, tabIndex }) => {
           tabIndex={tabIndex}
           onBlur={() => setInitialFocus(true)}
           required
+          id={id}
         ></textarea>
       )}
     </div>

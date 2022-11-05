@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import { Form } from "react-router-dom";
 import FormInput from "../components/FormInput";
-import check from "../check.svg";
 import CheckBoxInput from "../components/CheckBoxInput";
 import FormButton from "../components/FormButton";
 
@@ -24,12 +23,14 @@ const Contact = () => {
                   placeholder={`Enter your first name`}
                   type={`text`}
                   tabIndex={`1`}
+                  id={`first_name`}
                 />
                 <FormInput
                   label={`Last Name`}
                   placeholder={`Enter your last name`}
                   type={`text`}
                   tabIndex={`2`}
+                  id={`last_name`}
                 />
               </div>
               <FormInput
@@ -37,12 +38,14 @@ const Contact = () => {
                 placeholder={`yourname@email.com`}
                 type={`email`}
                 tabIndex={`3`}
+                id={`email`}
               />
               <FormInput
                 label={`Message`}
                 placeholder={`Send me a message and I'll reply as soon as possible...`}
                 type={`textarea`}
                 tabIndex={`4`}
+                id={`message`}
               />
               <CheckBoxInput />
               <FormButton />
