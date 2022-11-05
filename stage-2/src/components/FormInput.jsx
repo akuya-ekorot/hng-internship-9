@@ -11,7 +11,7 @@ const FormInput = ({ label, placeholder, type, tabIndex, id, helperText }) => {
       {type !== "textarea" ? (
         <div className="flex flex-col gap-[6px]">
           <input
-            className={`${tailwindStyles} ${
+            className={`peer ${tailwindStyles} ${
               initialFocus &&
               "invalid:border-error-default invalid:focus:ring-error-focused"
             }`}
@@ -22,7 +22,13 @@ const FormInput = ({ label, placeholder, type, tabIndex, id, helperText }) => {
             required
             id={id}
           />
-          <p className={`text-sm font-normal text-gray-600`}>{helperText}</p>
+          <p
+            className={`text-sm font-normal text-gray-600 ${
+              initialFocus && "peer-invalid:text-[#F83F23]"
+            }`}
+          >
+            {helperText}
+          </p>
         </div>
       ) : (
         <div className="flex flex-col gap-[6px]">
@@ -39,7 +45,8 @@ const FormInput = ({ label, placeholder, type, tabIndex, id, helperText }) => {
           ></textarea>
           <p
             className={`invisible ${
-              initialFocus && "peer-invalid:visible font-medium text-[#F83F23]"
+              initialFocus &&
+              "peer-invalid:visible font-medium text-sm text-[#F83F23]"
             }`}
           >
             Please enter a message
