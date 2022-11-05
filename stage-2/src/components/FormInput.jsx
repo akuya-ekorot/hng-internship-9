@@ -22,17 +22,26 @@ const FormInput = ({ label, placeholder, type, tabIndex, id }) => {
           id={id}
         />
       ) : (
-        <textarea
-          className={`${tailwindStyles} h-[130px] focus:border-primary-300 focus:ring focus:ring-primary-100 ${
-            initialFocus &&
-            "invalid:border-error-default invalid:focus:ring-error-focused invalid:focus:border-error-default"
-          }`}
-          placeholder={placeholder}
-          tabIndex={tabIndex}
-          onBlur={() => setInitialFocus(true)}
-          required
-          id={id}
-        ></textarea>
+        <>
+          <textarea
+            className={`${tailwindStyles} peer h-[130px] focus:border-primary-300 focus:ring focus:ring-primary-100 ${
+              initialFocus &&
+              "invalid:border-error-default invalid:focus:ring-error-focused invalid:focus:border-error-default"
+            }`}
+            placeholder={placeholder}
+            tabIndex={tabIndex}
+            onBlur={() => setInitialFocus(true)}
+            required
+            id={id}
+          ></textarea>
+          <p
+            className={`invisible ${
+              initialFocus && "peer-invalid:visible font-medium text-[#F83F23]"
+            }`}
+          >
+            Please enter a message
+          </p>
+        </>
       )}
     </div>
   );
