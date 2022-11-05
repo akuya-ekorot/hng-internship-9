@@ -24,6 +24,7 @@ const Contact = () => {
                   type={`text`}
                   tabIndex={`1`}
                   id={`first_name`}
+                  helperText={`Please enter your pretty first name. e.g Jane`}
                 />
                 <FormInput
                   label={`Last Name`}
@@ -31,6 +32,7 @@ const Contact = () => {
                   type={`text`}
                   tabIndex={`2`}
                   id={`last_name`}
+                  helperText={`Now enter your amazing last name. e.g Doe`}
                 />
               </div>
               <FormInput
@@ -39,6 +41,7 @@ const Contact = () => {
                 type={`email`}
                 tabIndex={`3`}
                 id={`email`}
+                helperText={`Ensure your email is valid. It should be something like jane@doe.com`}
               />
               <FormInput
                 label={`Message`}
